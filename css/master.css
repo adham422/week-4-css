@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Fraunces:opsz,wght@9..144,800&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: auto auto auto;
+    gap: 8px;
+}
+.dan {
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85%;
+    background-position-y: 1px;
+    background-size: 10rem;
+    background-color:  hsl(263, 55%, 52%);
+    padding: 2rem;
+    grid-column: span 8;
+}
+
+.kira{
+    background-color:  hsl(0, 0%, 100%);
+    padding: 2rem;
+    grid-column: span 3;
+    grid-row: span 3;
+}
+.jon {
+    background-color: hsl(217, 19%, 35%);
+    padding: 2rem;
+    grid-column: span 3;
+    grid-row: span 1;
+}
+.jean {
+    background-color:  hsl(0, 0%, 100%);
+    padding: 2rem;
+    grid-column: span 4;
+}
+.patr {
+    background-color: hsl(0, 39%, 13%);
+    padding: 2rem;
+    grid-column: span 7;
+}
+.dan .header,
+.jon .header,
+.kira .header,
+.jean .header,
+.patr .header {
+   display: flex;
+}
+.dan img,
+.jon img,
+.kira img,
+.jean img,
+.patr img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.dan .tit,
+.jon .tit,
+.kira .tit,
+.jean .tit,
+.patr .tit{
+    padding: 1em;
+    color: #fff;
+    font-size: 1em;
+    position: relative;
+    top: -12px;
+}
+.dan_name,
+.jon_name,
+.kira_name,
+.jean_name,
+.patr_name {
+    text-transform: capitalize;
+    font-weight: 500px;
+    font-size: 1.2rem;
+}
+.dan_des,
+.jon_des,
+.kira_des,
+.jean_des,
+.patr_des {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-top: 5px;
+}
+.dan .skills,
+.jon .skills,
+.kira .skills,
+.jean .skills,
+.patr .skills {
+    padding: 1rem 0px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.dan .need,
+.jon .need,
+.kira .need,
+.jean .need,
+.patr .need {
+    padding: 1rem 0px;
+    font-weight: 100;
+    font-size: 1rem;
+    color: #fff;
+}
+.kira_name,
+.kira_des,
+.kira .header,
+.kira .skills,
+.kira .need,
+.jean_name,
+.jean_des,
+.jean .header,
+.jean .skills,
+.jean .need {
+    color: #000 !important;
+}
+.kira .need,
+.jean .need {
+    font-weight: 200;
+}
+@media (max-width:680px) {
+    .content {
+        grid-template-columns: repeat(4,1fr);
+    }
+    .dan,
+    .kira,
+    .jean,
+    .patr,
+    .jon {
+        grid-column: span 2;
+    }
+}
+@media (max-width:410px) {
+    .content {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .dan,
+    .kira,
+    .jean,
+    .patr,
+    .jon {
+        grid-column: span 1;
+    }
+}
+/********************Assignment 2***********************/
+.content2 
+{
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 8rem;
+}
+.sed {
+    background-color:  hsl(31, 77%, 52%);
+    padding: 3em;
+}
+.suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3em;
+}
+.lux {
+    background-color:hsl(179, 100%, 13%);
+    padding: 3em;
+}
+.sed .titl,
+.suv .titl,
+.lux .titl {
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+.sed .par,
+.suv .par,
+.lux .par {
+    padding-bottom: 3rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.sed button,
+.suv button,
+.lux button {
+    background-color: #fff;
+    color: hsl(31, 77%, 52%);
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5rem;
+    border: none;
+}
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+.lux button {
+    color: hsl(179, 100%, 13%);
+}
+.sed button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: hsl(31, 77%, 52%);
+}
+.suv button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: hsl(184, 100%, 22%);
+}
+.lux button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: hsl(179, 100%, 13%);
+}
+@media(max-width:1440px)
+{
+    .content2{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:800px)
+{
+    .content2{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0rem;
+    }
+}
+@media(max-width:375px)
+{
+    .content2{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0rem;
+    }
+}
+
